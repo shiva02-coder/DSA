@@ -380,13 +380,13 @@ using namespace std;
 //         else{count++;}  //we made a counter to get us know how manny 0'es are actually there.
 //     }
 
-//     for(auto m : StoreNonZero){  //this is for showing what's inside that vector
+//     for(auto m : StoreNonZero){  //Not mendatory. This is for showing what's inside that vector
 //         cout<<m;}
 
 //     cout<<"\n";
 
-//     for(int i=0; i<size-count; i++){  //this counter have total number of zeros in it
-//        arr[i] = StoreNonZero[i];
+//     for(int i=0; i<size-count; i++){  //this counter had total zeros so we are only keeping the that much space after minusing zeros
+//        arr[i] = StoreNonZero[i];   //now on the front of the array our non zero el are stored
 //     }                          
     
 //     for(int i = size-count; i<size; i++){  //i could've used .size instead of counter but it's more slayish
@@ -394,7 +394,7 @@ using namespace std;
 //     }
 
 //     for(int i=0; i<size; i++){  //this one is also for the showcase..
-//         cout<<arr[i];           // TC will be- O(n)+O(size-count)+O(n-(size-count))  --> O(2n)
+//         cout<<arr[i];           // TC will be- O(n)+O(n-count)+O(count)  --> O(2n)
 //     }                           // SC- 'Extra space will be used as O(n) also this SC is for worst case cuz imagine if there's no zero in the entire array but still all el will be added to the temp
 // }
 
@@ -444,17 +444,11 @@ using namespace std;
 // }
 
 
-
 //Work For Tommorow :-
 // Do "Push 0'es at the end(brutal) by yourself and then interpret comments $
-// Do "Optimal approach of this ^ by yourself and then interpret comments $
+// Do "Optimal approach of this ^ by yourself and then interpret comments 
 // Do "Linaer search by yourself -> Read Comments -> Look for another approaches
 // Then move onto the next question "union and somthing".
 
 
 
-// int main(){
-//     int arr[]={4,6,2,3,8,6,7,9,3};
-//     int size= sizeof(arr)/sizeof(arr[0]);
-    
-// }
